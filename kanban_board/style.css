@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+    background-color: #eeeeee;
+
+}
+
+#kanban {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    width: 300px;
+}
+
+.new_todo {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:white;
+    border-radius: 20px;
+}
+
+.new_todo:hover {
+    cursor: pointer;
+}
+
+button {
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    background-color: #7CE5F3;
+    padding: 5px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18px;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+button:focus {
+    outline: none;
+}
+
+h1 {
+    padding: 5px;
+    border-radius: 20px;
+}
+
+#todo1 {
+    background-color: #C5E5E8;
+}
+
+#todo2 {
+    background-color: #9DBBD8;
+}
+
+#todo3 {
+    background-color: #B5B8DF;
+}
+
+#todo1, #todo2, #todo3 {
+    border: 3px solid white;
+    padding: 10px 0px;
+}

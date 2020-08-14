@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>kanban board</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+        <link rel="manifest" href="favicon/site.webmanifest">
+    </head>
+
+    <body>
+        <div id="body">
+            <div id="kanban">
+                <div ondrop="drop(event, this, 'added')" ondragover="allow_drop(event)" id="todo" class="column">
+                    <h1 id="todo1">todo</h1>
+                    <button id="new_button">+new</button>
+                </div>
+                <div ondrop="drop(event, this, 'doing')" ondragover="allow_drop(event)" class="column">
+                    <h1 id="todo2">doing</h1>
+                </div>
+                <div ondrop="drop(event, this, 'done')" ondragover="allow_drop(event)" class="column">
+                    <h1 id="todo3">done</h1>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+
+</html>
